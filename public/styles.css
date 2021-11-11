@@ -5,10 +5,16 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: left;
     color: #2c3e50;
+    width: 100%;
 }
 
 #calendar-wrap {
+    float: left;
     width: 300px;
+}
+
+#selected-value {
+    font-size: 14px;
 }
 
 .vue-calendar-day-block {

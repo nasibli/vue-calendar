@@ -1,7 +1,7 @@
 <template>
   <div class="vue-calendar">
     <div class="vue-calendar-month">
-      <span class="vue-calendar-month-title">{{ monthName }}</span>
+      <span class="vue-calendar-month-title">{{ monthName }}, {{ this.state.year }}</span>
       <button type="button"
               class="vue-calendar-month-after"
               @click="switchNextMonth">
@@ -108,7 +108,8 @@ export default {
       }
     },
     onDaySelected (day) {
-      this.date = new Date(`${this.state.year}-${this.state.month}-${day}`)
+      this.date = new Date(`${this.state.year}-${this.state.month}-${day}`);
+      this.$emit('onChanged', this.date);
     },
   }
 };
