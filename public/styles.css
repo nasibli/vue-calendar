@@ -1,0 +1,35 @@
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: left;
+    color: #2c3e50;
+}
+
+#calendar-wrap {
+    width: 300px;
+}
+
+.vue-calendar-day-block {
+    float: left;
+    height: 20px;
+    width: 14%;
+}
+
+.vue-calendar-day-block:hover {
+    background-color: lightgrey;
+}
+
+.vue-calendar-day-block-active {
+    background-color: steelblue;
+}
+
+.vue-calendar-month-title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.vue-calendar-month-before, .vue-calendar-month-after {
+    float: right;
+}
